@@ -1,0 +1,148 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    --light-brown: #F3EED9;
+    --brown: #824936;
+    --olive-green: #222C2A;
+
+    font-size: 18px;
+    margin: 0;
+
+    --sub-text-font: 'Roboto', sans-serif;
+    --header-text-font: 'Playfair Display', serif;
+}
+
+h1, h3 {
+    font-family: var(--header-text-font);
+    font-weight: 800;
+    margin-top: 0;
+}
+
+img {
+    /* flex-basis: 50%; */
+    max-width: 100%;
+}
+
+.add_button{
+    padding: 1em 1.5em;
+    background-color: green;
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 1128px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.header {
+    min-height: 660px;
+    background-color: var(--light-brown);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.header h1 {
+    width: 40%;
+    font-size: 3em;
+    /* font-family: var(--header-text-font); */
+    color: var(--brown);
+    margin: 0;
+    text-align: center;
+}
+
+.header h3 {
+    font-size: 0.75em;
+    font-family: var(--sub-text-font);
+    color: var(--olive-green);
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+main h3 {
+    font-size: 2rem;
+    /* font-family: var(--header-text-font); */
+    color: var(--brown);
+    display: flex;
+    justify-content: center;
+}
+/* .main-row {
+    flex-basis: 50%;
+} */
+
+.main-row p {
+    font-size: 1.3rem;
+    font-family: var(--sub-text-font);
+    color: var(--olive-green);
+
+    line-height: 1.4em;
+}
+
+.section1 {
+    background-color: var(--olive-green);
+}
+
+.section-content {
+    color: var(--light-brown);
+    /* flex-basis: 50%; */
+}
+
+.section-content h3 {
+    font-size: 2rem;
+    /* font-family: var(--header-text-font); */
+}
+
+.section-content p {
+    font-size: 1.3rem;
+    font-family: var(--sub-text-font);
+    line-height: 1.4em;
+}
+
+.section2 {
+    background-color: var(--brown);
+}
+
+.col {
+    width: 100%;
+}
+
+
+@media(max-width: 1000px) {
+    .container {
+        display: block;
+    }
+
+    .row {
+        display: block;
+    }
+
+    section * {
+        text-align: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header h1 {
+        font-size: 2.3rem;
+    }
+}
